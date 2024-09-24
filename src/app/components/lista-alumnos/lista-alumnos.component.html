@@ -1,6 +1,6 @@
 <div class="list-group">
   <button
-    (click)="eliminarAlumno.emit(i)"
+    (click)="eliminarAlumno.emit({ index: i, nombre: alumno })"
     *ngFor="let alumno of alumnos; let i = index"
     type="button"
     class="list-group-item list-group-item-action"

@@ -6,13 +6,13 @@
 -->
 
 <app-lista-alumnos
-  (eliminarAlumno)="eliminarAlumno($event, 'aprobados')"
+  (eliminarAlumno)="eliminarAlumno($event.index, 'aprobados')"
   [alumnos]="alumnosAprobados"
 ></app-lista-alumnos>
 
 <h2>Alumnos desaprobados</h2>
 
 <app-lista-alumnos
-  (eliminarAlumno)="eliminarAlumno($event, 'desaprobados')"
+  (eliminarAlumno)="eliminarAlumno($event.index, 'desaprobados')"
   [alumnos]="alumnosDesaprobados"
 ></app-lista-alumnos>

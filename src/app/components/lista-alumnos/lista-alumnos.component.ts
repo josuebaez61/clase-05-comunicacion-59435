@@ -19,5 +19,8 @@ export class ListaAlumnosComponent {
    * El decorador @Ouput nos sirve para notificar al padre de que algo
    * sucedio
    */
-  @Output() eliminarAlumno = new EventEmitter<number>();
+  @Output() eliminarAlumno = new EventEmitter<{
+    index: number;
+    nombre: string;
+  }>();
 }

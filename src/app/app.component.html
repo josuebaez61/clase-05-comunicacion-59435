@@ -1,3 +1,11 @@
+<app-modal [(visible)]="modalVisible"></app-modal>
+
+{{ modalVisible }}
+
+<button (click)="modalVisible = !modalVisible" class="btn btn-primary">
+  Abrir modal
+</button>
+
 <h2>Alumnos aprobados</h2>
 
 <!-- AppComponent renderiza dentro de si a AppListaAlumnos
@@ -16,3 +24,7 @@
   (eliminarAlumno)="eliminarAlumno($event.index, 'desaprobados')"
   [alumnos]="alumnosDesaprobados"
 ></app-lista-alumnos>
+
+<hr />
+
+<button #myButton class="btn primary">Click me!</button>

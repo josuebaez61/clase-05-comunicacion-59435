@@ -1,0 +1,17 @@
+<div *ngIf="visible" class="background">
+  <div class="card">
+    <div class="card-body">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque mollitia
+        praesentium nisi distinctio rerum assumenda laboriosam? Officia facilis
+        corrupti tempora at, deserunt molestias et, nisi temporibus tempore eius
+        veniam nihil.
+      </p>
+    </div>
+    <div class="card-footer">
+      <button (click)="visibleChange.emit(false)" class="btn btn-danger">
+        Cerrar
+      </button>
+    </div>
+  </div>
+</div>
